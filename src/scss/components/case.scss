@@ -1,0 +1,75 @@
+.case {
+  .swiper-pagination {
+    position: static;
+    margin-right: unset;
+    margin-left: unset;
+    display: flex;
+    justify-content: flex-end;  
+    @media(max-width: 991px){
+      order: 2;
+      justify-content: center;
+    }
+  }
+  .swiper {
+    padding-right: 200px;
+    overflow: visible;
+    @media(max-width: 991px){
+      padding-right: 100px;
+    }
+    @media(max-width: 767px){
+      padding-right: 0;
+    }
+    .swiper-slide {
+      height: 100%;
+      opacity: .2;
+      transition: opacity .2s linear;
+      &-active {
+        opacity: 1;
+      }
+    }
+    .caseCard {
+      height: 100%;
+    }
+  }
+  &Card {
+    border: 1px solid var(--gray-500);
+    padding: 32px;
+    @media(max-width: 575px){
+      padding: 16px;
+    }
+    
+    &Img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      flex-shrink: 0;
+      @media(max-width: 1199px){
+        width: 200px;
+        height: 200px;
+      }
+      @media(max-width: 991px){
+        width: 150px;
+        height: 150px;
+      }
+      @media(max-width: 575px){
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  .socialsLink {
+    &:hover {
+      color: var(--blue);
+    }
+  }
+  .navArrowPrev {
+    @media(max-width: 991px){
+      order: 1;
+    }
+  }
+  .navArrowNext {
+    @media(max-width: 991px){
+      order: 3;
+    }
+  }
+}

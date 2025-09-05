@@ -1,0 +1,17 @@
+.why {
+  &__item {
+    &-title {
+      min-height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      @media(max-width: 767px){
+        min-height: unset;
+        font-size: 16px;
+      }
+    }
+    &-text {
+      color: var(--gray-700);
+    }
+  }
+}

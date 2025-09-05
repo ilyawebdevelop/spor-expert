@@ -1,0 +1,6 @@
+.news {
+  padding-bottom: 60px;
+  @media(max-width: 991px){
+    padding-bottom: 0;
+  }
+}

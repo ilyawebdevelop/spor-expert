@@ -1,0 +1,50 @@
+.intro {
+  @media(max-width: 991px){
+    padding-top: 20px;
+  }
+  .swiper-pagination {
+    position: static;
+    margin-right: unset;
+    margin-left: unset;
+    display: flex;
+    justify-content: flex-end;
+    @media(max-width: 991px){
+      order: 2;
+      justify-content: center;
+    }
+  }
+  &Subtitle {
+    font-size: 30px;
+    line-height: 120%;
+    @media(max-width: 1199px){
+      font-size: 24px;
+    }
+    @media(max-width: 991px){
+      font-size: 20px;
+    }
+  }
+  &Slide {
+    img {
+      height: 380px;
+      width: 100%;
+      object-fit: cover;
+      @media(max-width: 575px){
+        height: 70vw;
+      }
+    }
+  }
+  .navArrowPrev {
+    order: 1;
+  }
+  .navArrowNext {
+    order: 3;
+  }
+  .socials {
+    a {
+      flex-shrink: 0;
+      img {
+        width: 32px;
+      }
+    }
+  }
+}
