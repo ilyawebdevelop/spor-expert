@@ -25,11 +25,11 @@ var mySwiperIntroSlider = new Swiper(introSlider, {
 	},
 	autoHeight: true,
 	navigation: {
-		prevEl: introSlider?.querySelector('.navArrowPrev'),
-		nextEl: introSlider?.querySelector('.navArrowNext'),
+		prevEl: introSlider?.closest('.intro').querySelector('.navArrowPrev'),
+		nextEl: introSlider?.closest('.intro').querySelector('.navArrowNext'),
 	},
 	pagination: {
-		el: introSlider?.querySelector('.swiper-pagination'),
+		el: introSlider?.closest('.intro').querySelector('.swiper-pagination'),
 		clickable: true,
 		type: 'bullets',
 	},
@@ -83,6 +83,7 @@ document.querySelectorAll('.logoSliderRight').forEach(n => {
 });
 
 const mediaQueryMax991 = window.matchMedia('(max-width: 991px)');
+const mediaQuerymin992 = window.matchMedia('(min-width: 992px)');
 const mediaQueryMax767 = window.matchMedia('(max-width: 767px)');
 
 // Акордионы
@@ -110,7 +111,128 @@ $('#toggle').click(function () {
 	$('.headerNavMobile').slideToggle();
 });
 
-$('.header__nav-has-child>a').click(function () {
+$('#toggle_sm').click(function () {
+	$(this).toggleClass('active');
+	$('.headerFixedSmNav').slideToggle();
+});
+
+$('.headerNavMobile .header__nav-has-child>a').click(function (e) {
+	e.preventDefault();
 	$(this).toggleClass('active');
 	$(this).siblings('.subList').slideToggle();
+});
+$('.headerFixedSmNav .header__nav-has-child>a').click(function (e) {
+	e.preventDefault();
+	$(this).toggleClass('active');
+	$(this).siblings('.subList').slideToggle();
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+	if (mediaQuerymin992.matches) {
+		const header = document.getElementById('headerFixedLg');
+		if (!header) {
+			console.error("Элемент с ID 'headerFixedLg' не найден!");
+			return;
+		}
+
+		let lastScrollTop = 0; // Хранит предыдущую позицию скролла
+		let headerVisible = true; // Флаг, показывающий, видима ли шапка
+		const scrollThreshold = 50; // Порог в пикселях, после которого начинаем реагировать на скролл (чтобы избежать дрожания при малейшем движении)
+
+		// Функция для добавления класса (появления)
+		function showHeader() {
+			if (!headerVisible) {
+				header.classList.add('header-visible'); // Добавляем класс для плавного появления
+				headerVisible = true;
+			}
+		}
+
+		// Функция для удаления класса (скрытия)
+		function hideHeader() {
+			if (headerVisible) {
+				header.classList.remove('header-visible'); // Удаляем класс для плавного скрытия
+				headerVisible = false;
+			}
+		}
+
+		window.addEventListener('scroll', function () {
+			const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+			// Проверяем, не находимся ли мы у самого верха страницы
+			if (scrollTop < scrollThreshold) {
+				// Плавно убираем шапку, если находимся в самом начале
+				hideHeader();
+			} else {
+				// Обычная логика скрытия/появления при скролле
+				if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+					// Скролл вниз: убираем шапку
+					hideHeader();
+				} else if (scrollTop < lastScrollTop) {
+					// Скролл вверх: показываем шапку
+					showHeader();
+				}
+			}
+			lastScrollTop = scrollTop; // Обновляем последнюю позицию скролла
+		});
+
+		// Изначальное состояние: если страница открыта не сначала, шапка должна быть видима
+		// (можно добавить класс .header-visible при загрузке, если нужно, но скрипт это обработает)
+		// При первой загрузке, если scrollTop > scrollThreshold, шапка будет показана,
+		// если < scrollThreshold, то будет скрыта.
+	}
+	if (mediaQueryMax991.matches) {
+		const header = document.getElementById('headerFixedSm');
+		if (!header) {
+			console.error("Элемент с ID 'headerFixedLg' не найден!");
+			return;
+		}
+
+		let lastScrollTop = 0; // Хранит предыдущую позицию скролла
+		let headerVisible = true; // Флаг, показывающий, видима ли шапка
+		const scrollThreshold = 50; // Порог в пикселях, после которого начинаем реагировать на скролл (чтобы избежать дрожания при малейшем движении)
+
+		// Функция для добавления класса (появления)
+		function showHeader() {
+			if (!headerVisible) {
+				header.classList.add('header-visible'); // Добавляем класс для плавного появления
+				headerVisible = true;
+			}
+		}
+
+		// Функция для удаления класса (скрытия)
+		function hideHeader() {
+			if (headerVisible) {
+				header.classList.remove('header-visible'); // Удаляем класс для плавного скрытия
+				headerVisible = false;
+			}
+		}
+
+		window.addEventListener('scroll', function () {
+			const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+			// Проверяем, не находимся ли мы у самого верха страницы
+			if (scrollTop < scrollThreshold) {
+				// Плавно убираем шапку, если находимся в самом начале
+				hideHeader();
+			} else {
+				// Обычная логика скрытия/появления при скролле
+				if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
+					// Скролл вниз: убираем шапку
+					hideHeader();
+				} else if (scrollTop < lastScrollTop) {
+					// Скролл вверх: показываем шапку
+					showHeader();
+				}
+			}
+			lastScrollTop = scrollTop; // Обновляем последнюю позицию скролла
+		});
+
+		// Изначальное состояние: если страница открыта не сначала, шапка должна быть видима
+		// (можно добавить класс .header-visible при загрузке, если нужно, но скрипт это обработает)
+		// При первой загрузке, если scrollTop > scrollThreshold, шапка будет показана,
+		// если < scrollThreshold, то будет скрыта.
+	}
 });

@@ -13163,6 +13163,12 @@ h2,
 .h2 {
   font-size: 30px;
 }
+@media (max-width: 991px) {
+  h2,
+.h2 {
+    font-size: 24px;
+  }
+}
 
 h3,
 .h3 {
@@ -13272,12 +13278,8 @@ h3,
 }
 
 .content > p {
-  margin-bottom: 15px;
-}
-@media (max-width: 991px) {
-  .content > p {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
+  line-height: 130%;
 }
 .content > p a {
   display: inline;
@@ -13384,10 +13386,17 @@ h3,
   font-size: 18px;
   line-height: 28px;
 }
+@media (max-width: 991px) {
+  .fz-18.fz-18-sm-16 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
 
 @media (max-width: 575px) {
   .fz-sm-14 {
     font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -13417,13 +13426,20 @@ h3,
   padding-right: 20px;
   margin-right: 20px;
   border-right: 1px solid var(--gray-500);
+  flex-shrink: 0;
+}
+@media (max-width: 991px) {
+  .socials {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-right: none;
+    border-left: 1px solid var(--gray-500);
+  }
 }
 @media (max-width: 575px) {
   .socials {
-    border-right: none;
-    border-bottom: 1px solid var(--gray-300);
-    padding-bottom: 10px;
-    margin-bottom: 2px;
+    margin-left: 14px;
+    padding-left: 14px;
   }
 }
 .socials a {
@@ -13505,6 +13521,10 @@ h3,
 }
 .button--blue:hover {
   background-color: #BCD09D;
+}
+.button--green {
+  background-color: #BCD09D;
+  color: #fff;
 }
 .button svg {
   width: 16px;
@@ -13815,6 +13835,96 @@ h3,
   transition: transform 0.2s linear;
 }
 
+.headerFixed--lg {
+  position: fixed;
+  /* Или sticky, в зависимости от вашей разметки */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Убедитесь, что шапка поверх другого контента */
+  /* По умолчанию шапка должна быть скрыта или полупрозрачна */
+  opacity: 0;
+  visibility: hidden;
+  /* Скрываем полностью, чтобы не мешала */
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  /* Плавность для opacity и visibility */
+  /* Дополнительные стили вашей шапки, например, фон */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.headerFixed--lg.header-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.headerFixedCol {
+  padding-right: 35px;
+  margin-right: 35px;
+  border-right: 1px solid var(--gray-300);
+}
+
+.header__socials-fixed li a img {
+  width: 32px;
+}
+
+.headerFixedLogo {
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .headerFixedLogo {
+    min-height: 34px;
+  }
+}
+
+.headerFixed--sm {
+  position: fixed;
+  /* Или sticky, в зависимости от вашей разметки */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Убедитесь, что шапка поверх другого контента */
+  /* По умолчанию шапка должна быть скрыта или полупрозрачна */
+  opacity: 0;
+  visibility: hidden;
+  /* Скрываем полностью, чтобы не мешала */
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  /* Плавность для opacity и visibility */
+  /* Дополнительные стили вашей шапки, например, фон */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.headerFixed--sm.header-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.headerFixedSmNav {
+  display: none;
+}
+.headerFixedSmNav .header__nav {
+  display: block;
+}
+
+.headerFixed--sm .headerFixedLogo {
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 1px solid var(--gray-300);
+}
+@media (max-width: 374px) {
+  .headerFixed--sm .headerFixedLogo {
+    margin-right: 15px;
+    padding-right: 15px;
+  }
+}
+
+#toggle_sm {
+  margin-left: auto;
+}
+
 @media (max-width: 991px) {
   .intro {
     padding-top: 20px;
@@ -13826,6 +13936,8 @@ h3,
   margin-left: unset;
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  row-gap: 10px;
 }
 @media (max-width: 991px) {
   .intro .swiper-pagination {
@@ -14015,6 +14127,7 @@ h3,
   align-items: center;
   padding: 0 10px; /* Отступ слева/справа внутри слайда */
   box-sizing: border-box;
+  filter: grayscale(1);
 }
 @media (max-width: 991px) {
   .css-slider-slide {
@@ -14128,6 +14241,54 @@ h3,
 
 .reviews .h2 {
   max-width: 600px;
+}
+@media (max-width: 1199px) {
+  .reviews .h2 {
+    max-width: 400px;
+  }
+}
+.reviews iframe {
+  border: 1px solid var(--gray-500);
+  min-height: 500px;
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 575px) {
+  .reviews iframe {
+    display: none;
+  }
+}
+.reviews .vk-icon img {
+  width: 42px;
+}
+@media (max-width: 575px) {
+  .reviews .vk-icon img {
+    width: 20px;
+  }
+}
+
+.reviews-vk-card {
+  padding: 20px;
+  border: 1px solid var(--gray-500);
+}
+@media (max-width: 575px) {
+  .reviews-vk-card {
+    border: none;
+    border-bottom: 1px solid var(--gray-500);
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .reviews-vk-card .h2 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+.reviews-vk-card .vk-icon img {
+  transition: transform 0.2s linear;
+}
+.reviews-vk-card:hover .vk-icon img {
+  transform: scale(1.1);
 }
 
 .why__item-title {
@@ -14279,9 +14440,12 @@ h3,
   padding-right: 0;
   margin-right: 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .footerB .socials {
     border-bottom: none;
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
   }
 }
 .footerB .socials a img {
@@ -14305,6 +14469,20 @@ h3,
   text-align: center;
   border-color: 1px solid transparent;
   transition: border-color 0.2s linear;
+}
+@media (max-width: 991px) {
+  .footerLogo {
+    border-bottom: none;
+    border-right: 1px solid var(--gray-300);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    padding-right: 20px;
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
 }
 .footerLogo:hover {
   border-color: var(--blue);
@@ -14353,6 +14531,17 @@ h3,
     grid-column: 12 span;
   }
 }
+@media (max-width: 1199px) {
+  .footerContentGrid .col:nth-child(5) {
+    grid-column: 8 span;
+    column-gap: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .footerContentGrid .col:nth-child(5) {
+    grid-column: 12 span;
+  }
+}
 .footerContentGrid .col h3 {
   font-size: 14px;
   line-height: 20px;
@@ -14360,6 +14549,16 @@ h3,
 }
 .footerContentGrid .col ul li {
   margin-bottom: 8px;
+}
+@media (max-width: 1199px) {
+  .footer .col-xl-50 {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .footer .col-xl-50 {
+    width: 100%;
+  }
 }
 
 .ml-auto {
