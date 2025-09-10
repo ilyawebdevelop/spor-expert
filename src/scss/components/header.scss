@@ -147,6 +147,10 @@
 
     img {
       transition: transform .2s linear;
+      width: 26px;
+      @media(max-width: 991px){
+        width: 32px;
+      }
     }
 
     &:hover {

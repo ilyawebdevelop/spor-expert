@@ -13783,6 +13783,12 @@ h3,
 
 .header__socials a img {
   transition: transform 0.2s linear;
+  width: 26px;
+}
+@media (max-width: 991px) {
+  .header__socials a img {
+    width: 32px;
+  }
 }
 .header__socials a:hover img {
   transform: scale(1.1);
