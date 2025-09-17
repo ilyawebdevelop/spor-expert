@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Отзывы</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+
+    <div class="header__top">
+      <div class="header__top-col fz-14">
+        <a href="#" class="header__logo fw-semibold">Спор Эксперт</a>
+        <ul class="header__list list fw-medium">
+          <li><a class="hover-blue" href="#">Защита прав потребителей</a></li>
+          <li><a class="hover-blue" href="#">Возврат навязанных услуг по кредиту</a></li>
+          <li><a class="hover-blue" href="#">Возврат страховки по кредиту</a></li>
+        </ul>
+      </div>
+      <div class="line d-none d-lg-block"></div>
+      <div class="header__top-col fz-14 fw-medium d-none d-lg-flex">
+        <div class="header__text mb-1">Честны с Вами </div>
+        <div class="header__text mb-1">Предупредим о рисках</div>
+        <div class="header__text mb-1">Доведём дело до результата</div>
+      </div>
+      <div class="line d-none d-lg-block"></div>
+      <div class="header__top-col fz-14 d-none d-lg-flex">
+        <ul class="header__list list fw-medium">
+          <li><a class="hover-blue" href="#">Вернуть карту помощи на дорогах </a></li>
+          <li><a class="hover-blue" href="#">ОСАГО после ДТП</a></li>
+          <li><a class="hover-blue" href="#">Некачественная мебель/техника</a> </li>
+          <li><a class="hover-blue" href="#">Как вернуть страховку по кредиту</a></li>
+        </ul>
+      </div>
+      <div class="line d-none d-lg-block"></div>
+      <div class="header__top-col fz-14 fw-medium d-none d-lg-flex">
+        <a href="tel:+375297224736" class="header__top-phone mb-1 hover-blue">+7 929 053 80 15</a>
+        <div class="header__text">Все города России</div>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="header__bottom-left">
+
+        <nav class="header__nav">
+          <ul class="header__nav-list d-flex flex-column flex-lg-row">
+            <li>
+              <a href="#">Услуги</a>
+            </li>
+            <li>
+              <a href="#">Отзывы</a>
+            </li>
+            <li>
+              <a href="#">Наши результаты</a>
+            </li>
+            <li>
+              <a href="#">Победы в суде</a>
+            </li>
+            <li>
+              <a href="#">Ответы на вопросы</a>
+            </li>
+            <li>
+              <a href="#">О нас</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="header__bottom-right d-flex align-items-center gap-2">
+        <ul class="header__socials d-flex gap-2">
+          <li>
+            <a href="#">
+              <img src="img/admin/max.svg" alt="max">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/admin/whatsapp.svg" alt="whatsapp">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="img/admin/tg.svg" alt="telegram">
+            </a>
+          </li>
+        </ul>
+        <div class="header__top-col fz-14 fw-medium d-flex d-lg-none">
+          <a href="tel:+375297224736" class="header__top-phone mb-1 hover-blue">+7 929 053 80 15</a>
+          <div class="header__text">Все города России</div>
+        </div>
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
+        <div class="header__text fz-14 fw-medium d-none d-lg-block">Написать нам вопрос</div>
+      </div>
+
+
+    </div>
+    <div class="headerNavMobile">
+      <nav class="header__nav">
+        <ul class="header__nav-list d-flex flex-column flex-lg-row">
+          <li class="header__nav-has-child">
+            <a href="#">Услуги</a>
+            <ul class="subList">
+              <li>
+                <a href="#">Возврат навязанных услуг по кредиту</a>
+              </li>
+              <li>
+                <a href="#">Возврат страховок по кредитам</a>
+              </li>
+              <li>
+                <a href="#">Банк - возврат денег за опции в кредите</a>
+              </li>
+              <li>
+                <a href="#">Споры по ОСАГО после ДТП</a>
+              </li>
+              <li>
+                <a href="#">Защита прав потребителей</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Отзывы</a>
+          </li>
+          <li>
+            <a href="#">Наши результаты</a>
+          </li>
+          <li>
+            <a href="#">Победы в суде</a>
+          </li>
+          <li>
+            <a href="#">Ответы на вопросы</a>
+          </li>
+          <li>
+            <a href="#">О нас</a>
+          </li>
+          <li>
+            <div class="d-flex align-items-center justify-content-between border-b-gray-200 py-2">
+              <a class="border-0 headerNavMobileOrderBtn" href="#">Заказать звонок</a>
+              <div class="line"></div>
+              <a class="border-0 fw-normal text--gray-400" href="tel:+7 000 000 00 00">+7 000 000 00 00</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="headerFixed--lg py-2" id="headerFixedLg">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-center">
+          <a href="#" class="headerFixedLogo text--blue fw-medium headerFixedCol">
+            Спор Эксперт
+          </a>
+          <div class="d-flex align-items-center gap-4 headerFixedCol">
+            <span class="fz-14">Написать нам вопрос</span>
+            <ul class="header__socials d-flex gap-2">
+              <li>
+                <a href="#">
+                  <img src="img/admin/max.svg" alt="max">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/admin/whatsapp.svg" alt="whatsapp">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="img/admin/tg.svg" alt="telegram">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="fz-14">
+            Проконсультируем бесплатно
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="headerFixed--sm py-2" id="headerFixedSm">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-start">
+          <a href="#" class="headerFixedLogo text--blue fw-medium fw-semibold">
+            Спор Эксперт
+          </a>
+          <div class="d-flex align-items-center gap-2">
+
+            <ul class="header__socials-fixed d-flex gap-2">
+              <li>
+                <a href="#">
+                  <img src="img/admin/max.svg" alt="max">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/admin/whatsapp.svg" alt="whatsapp">
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="img/admin/tg.svg" alt="telegram">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="hamburger" id="toggle_sm">
+            <div class="top-bun"></div>
+            <div class="meat"></div>
+            <div class="bottom-bun"></div>
+          </div><!-- /Hamburger Menu -->
+        </div>
+        <div class="headerFixedSmNav">
+          <nav class="header__nav">
+            <ul class="header__nav-list d-flex flex-column flex-lg-row">
+              <li class="header__nav-has-child">
+                <a href="#">Услуги</a>
+                <ul class="subList">
+                  <li>
+                    <a href="#">Возврат навязанных услуг по кредиту</a>
+                  </li>
+                  <li>
+                    <a href="#">Возврат страховок по кредитам</a>
+                  </li>
+                  <li>
+                    <a href="#">Банк - возврат денег за опции в кредите</a>
+                  </li>
+                  <li>
+                    <a href="#">Споры по ОСАГО после ДТП</a>
+                  </li>
+                  <li>
+                    <a href="#">Защита прав потребителей</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Отзывы</a>
+              </li>
+              <li>
+                <a href="#">Наши результаты</a>
+              </li>
+              <li>
+                <a href="#">Победы в суде</a>
+              </li>
+              <li>
+                <a href="#">Ответы на вопросы</a>
+              </li>
+              <li>
+                <a href="#">О нас</a>
+              </li>
+              <li>
+                <div class="d-flex align-items-center justify-content-between border-b-gray-200 py-2">
+                  <a class="border-0 headerNavMobileOrderBtn" href="#">Заказать звонок</a>
+                  <div class="line"></div>
+                  <a class="border-0 fw-normal text--gray-400" href="tel:+7 000 000 00 00">+7 000 000 00 00</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+		<main class="main">
+			<div class="breadcrumbs">
+  <div class="container">
+    <div class="aioseo-breadcrumbs">
+      <span class="aioseo-breadcrumb">
+        <a href="/" title="Главная">Главная</a>
+      </span>
+      <span class="aioseo-breadcrumb-separator"><img src="img/icons/crumbs.svg" alt="icon"></span>
+      <span class="aioseo-breadcrumb">
+        <a href="https://brickstone.pro/category/services/" title="Банк">Банк</a>
+      </span>
+      <span class="aioseo-breadcrumb-separator"><img src="img/icons/crumbs.svg" alt="icon"></span>
+      <span class="aioseo-breadcrumb">
+        Выиграли суд по возврату денег за услуги ООО "Ринг Сити"
+      </span>
+    </div>
+  </div>
+</div>
+
+			<section class="sect pt-0 pb-0">
+  <div class="container">
+    <div class="border-b-gray-300 pb-4">
+      <h1 class="h1 mb-4 pb-0 pb-lg-2">
+        Отзывы о компании Спор Эксперт
+      </h1>
+  
+      <div class="articleText content text--gray-800 fz-18 fz-18-sm-16">
+        <p>
+          Вместо тысячи слов - о человеке лучше всего говорят дела, а о компании реальные отзывы ее клиентов.
+        </p>
+        <ul>
+          <li>
+            С начала нашей практики 2008 года мы принимали благодарности устно
+          </li>
+          <li>
+            В 2014 году решили завести страницу с отзывами
+          </li>
+          <li>
+            В 2016 году завели книгу для приема отзывов написанных от руки, но она уже давно морально устарела. Мы
+            сохранили часть фотографий с отзывами из книги отзывов, их можно посмотреть на <a href="#" target="_blank">странице</a>
+          </li>
+          <li>
+            С 2019 года клиенты могут оставить <a href="" target="_blank">отзыв в ВК</a>
+          </li>
+          <li>
+            с 2024г. отзывы на Яндексе и 2ГИС
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+			<section class="reviews sliderW">
+  <div class="container">
+
+    <div class="d-flex align-items-start justify-content-between gap-4 gap-lg-5 mb-5 mb-sm-4 mb-lg-5 flex-column flex-lg-row">
+      <h2 class="h2 mb-0">
+        Более 1000 человек по&nbsp;всей России доверяют нам ведение своего дела, многие уже повторно
+      </h2>
+      <a href="https://vk.com/topic-26371008_39735910" class="reviews-vk-card d-flex gap-2 gap-md-3 align-items-center"
+        target="_blank">
+        <div class="vk-icon">
+          <img src="img/admin/vk.svg" alt="icon">
+        </div>
+        <div class="h2 mb-0">
+          Отзывы ВК
+        </div>
+        <div class="d-flex rate-person-wrap">
+          <img src="img/admin/rate-img-1.png" alt="image" class="rate-person">
+          <img src="img/admin/rate-img-2.png" alt="image" class="rate-person">
+          <img src="img/admin/rate-img-3.png" alt="image" class="rate-person">
+          <img src="img/admin/rate-img-4.png" alt="image" class="rate-person">
+          <img src="img/admin/rate-img-5.png" alt="image" class="rate-person">
+        </div>
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0 d-none d-sm-block">
+        <iframe style="width:100%;height:100%; border-radius:0px;box-sizing:border-box"
+          src="https://yandex.ru/maps-reviews-widget/209242394426?comments"></iframe>
+      </div>
+      <div class="col-lg-6 d-none d-sm-block">
+        <iframe id="big_light_70000001007115992" frameborder="0" width="528px" height="560px"
+          sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+        <script
+          type="text/javascript">((r, u) => { const l = document.getElementById(r); l.contentWindow.document.open(), l.contentWindow.document.write(decodeURIComponent(escape(atob(u)))), l.contentWindow.document.close() })("big_light_70000001007115992", "PGhlYWQ+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPgogICAgd2luZG93Ll9fc2l6ZV9fPSdiaWcnOwogICAgd2luZG93Ll9fdGhlbWVfXz0nbGlnaHQnOwogICAgd2luZG93Ll9fYnJhbmNoSWRfXz0nNzAwMDAwMDEwMDcxMTU5OTInCiAgICB3aW5kb3cuX19vcmdJZF9fPSc3MDAwMDAwMTAwNzExNTk5MycKICAgPC9zY3JpcHQ+PHNjcmlwdCBjcm9zc29yaWdpbj0iYW5vbnltb3VzIiB0eXBlPSJtb2R1bGUiIHNyYz0iaHR0cHM6Ly9kaXNrLjJnaXMuY29tL3dpZGdldC1jb25zdHJ1Y3Rvci9hc3NldHMvaWZyYW1lLmpzIj48L3NjcmlwdD48bGluayByZWw9Im1vZHVsZXByZWxvYWQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmpzIj48bGluayByZWw9InN0eWxlc2hlZXQiIGNyb3Nzb3JpZ2luPSJhbm9ueW1vdXMiIGhyZWY9Imh0dHBzOi8vZGlzay4yZ2lzLmNvbS93aWRnZXQtY29uc3RydWN0b3IvYXNzZXRzL2RlZmF1bHRzLmNzcyI+PC9oZWFkPjxib2R5PjxkaXYgaWQ9ImlmcmFtZSI+PC9kaXY+PC9ib2R5Pg==")</script>
+      </div>
+      <div class="col-12 mb-5">
+        <a href="https://yandex.ru/maps/org/rosavtoyurist/209242394426/reviews/?ll=99.505405%2C61.718092&z"
+          class="reviews-vk-card d-flex align-items-center d-sm-none gap-2" target="_blank">
+          <div class="vc-icon">
+            <img src="img/admin/yandex.svg" alt="icon">
+          </div>
+          <span class="fw-medium">Яндекс 5 из 5</span>
+          <div class="d-flex gap-1">
+            <img src="img/icons/star.svg" alt="star">
+            <img src="img/icons/star.svg" alt="star">
+            <img src="img/icons/star.svg" alt="star">
+            <img src="img/icons/star.svg" alt="star">
+            <img src="img/icons/star.svg" alt="star">
+          </div>
+        </a>
+      </div>
+      <div class="col-12">
+        <a href="https://2gis.ru/n_novgorod/firm/70000001007115992/tab/reviews"
+          class="reviews-vk-card d-flex align-items-center d-sm-none gap-2" target="_blank">
+          <div class="vc-icon">
+            <img src="img/admin/2gis.svg" alt="icon">
+          </div>
+          <span class="fw-medium">2Гис 5 из 5 </span>
+          <div class="d-flex gap-1">
+            <img src="img/icons/star.svg" alt="star">
+            <img src="img/icons/star.svg" alt="star">
+            <img src="img/icons/star.svg" alt="star">
+            <img src="img/icons/star.svg" alt="star">
+            <img src="img/icons/star.svg" alt="star">
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+			<section class="sect team">
+  <div class="container">
+    <h2 class="h2 mb-4 mb-lg-5 pb-3 pb-lg-0">
+      Расскажите нам о&nbsp;вашей ситуации и&nbsp;мы&nbsp;найдем лучшее решение
+    </h2>
+    <img src="img/admin/team-img-1.jpg" alt="image" class="teamImg">
+    <div class="d-block d-lg-none mt-4">
+      <div class=" justify-content-end justify-content-lg-start d-flex flex-row-reverse flex-lg-row align-items-center mb-4 pb-2">
+  <div class="d-flex align-items-center gap-2 socials">
+    <a href="#" target="_blank">
+      <img src="img/admin/whatsapp.svg" alt="whatsapp">
+    </a>
+    <a href="#" target="_blank">
+      <img src="img/admin/tg.svg" alt="telegram">
+    </a>
+    <a href="#" target="_blank">
+      <img src="img/admin/max.svg" alt="max">
+    </a>
+  </div>
+  <span class="fw-medium fz-18 fz-sm-14">Проконсультироваться бесплатно</span>
+</div>
+    </div>
+  </div>
+</section>
+
+			<section class="result pb-0">
+  <div class="container">
+
+    <h2 class="result__title mb-4 mb-lg-5 pb-3 pb-lg-0">
+      Результаты нашей работы
+    </h2>
+
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-5">
+        <div class="resultCard pb-3 pb-lg-4 border-b-blue h-100">
+          <a class="d-block mb-2 pb-1 fw-medium hover-blue" href="#">Вернули 150 000 руб. за услуги ООО "Ринг Сити" и
+            ООО "М-Ассистанс" клиенту из г. Москва
+            01.07.2025</a>
+          <div class="resultCardDate text--gray-600">01.07.2025</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 mb-md-5">
+        <div class="resultCard pb-3 pb-lg-4 border-b-blue h-100">
+          <a class="d-block mb-2 pb-1 fw-medium hover-blue" href="#">Вернули 150 000 руб. за услуги ООО</a>
+          <div class="resultCardDate text--gray-600">01.07.2025</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 mb-md-5">
+        <div class="resultCard pb-3 pb-lg-4 border-b-blue h-100">
+          <a class="d-block mb-2 pb-1 fw-medium hover-blue" href="#">Вернули 150 000 руб. за услуги ООО "Ринг Сити" и
+            ООО "М-Ассистанс" клиенту из г. Москва
+            01.07.2025</a>
+          <div class="resultCardDate text--gray-600">01.07.2025</div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4 mb-md-5">
+        <div class="resultCard pb-3 pb-lg-4 border-b-blue h-100">
+          <a class="d-block mb-2 pb-1 fw-medium hover-blue" href="#">Вернули 150 000 руб. за услуги ООО "Ринг Сити" и
+            ООО "М-Ассистанс" клиенту из г. Москва
+            01.07.2025 Вернули 150 000 руб. за услуги ООО "Ринг Сити" и ООО "М-Ассистанс" клиенту из г. Москва
+            01.07.2025</a>
+          <div class="resultCardDate text--gray-600">01.07.2025</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="result__link text-end d-block text-link text-link--blue ml-auto fz-14 fw-medium">Посмотреть все</a>
+  </div>
+</section>
+			<section class="map bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+
+        <h2 class="h2 mb-0">
+          Работаем дистанционно в любом населенном пункте России
+        </h2>    
+
+      </div>
+      <div class="col-lg-6">
+        <img class="mapImg" src="img/admin/map-2.png" alt="image">
+      </div>
+    </div>
+  </div>
+</section>
+
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footerT">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="mb-2 acordItem">
+            <div class="accordHead accordHead--arrow-left fw-medium">Честны с Вами - расскажем о перспективах и рисках</div>
+            <div class="accordBody fz-14">
+              01.07.2025г. - выиграли суд по возврату денег за услуги ООО "Сити Ассист"
+            </div>
+          </div>
+          <div class="mb-0 acordItem">
+            <div class="accordHead accordHead--arrow-left fw-medium">Доведем до результата</div>
+            <div class="accordBody fz-14">
+              01.07.2025г. - выиграли суд по возврату денег за услуги ООО "Сити Ассист"
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex align-items-center justify-content-end mt-4 mt-lg-0">
+            <div class="footerTopSocials d-flex">
+              <div class="d-flex align-items-center gap-2">
+                <a href="#" target="_blank">
+                  <img src="img/admin/vk.svg" alt="icon">
+                </a>
+                <a href="#" target="_blank">
+                  <img src="img/admin/tg.svg" alt="icon">
+                </a>
+              </div>
+            </div>
+            <span class="footerTopSocialsText fz-12">Подпишитесь, у нас интересно</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerContent">
+      <div class="footerContentGrid">
+        <div class="col">
+          <div class="mb-2 mb-lg-3 acordItem">
+            <h3 class="accordHead--sm mb-0 mb-lg-2 pb-0 pb-lg-1">Защита прав потребителей</h3>
+            <div class="accordBody--sm fz-12">
+              <ul>
+                <li><a href="#" class="hover-blue">Возврат некачественной мебели/техники/товара</a></li>
+                <li><a href="#" class="hover-blue">Продавец отменил заказ по низкой цене</a></li>
+                <li><a href="#" class="hover-blue">Некачественные онлайн курсы</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-2 mb-lg-3 acordItem">
+            <h3 class="accordHead--sm mb-0 mb-lg-2 pb-0 pb-lg-1">Споры со Страховыми</h3>
+            <div class="accordBody--sm fz-12">
+              <ul>
+                <li><a href="#" class="hover-blue">ОСАГО отказывают в ремонте</a></li>
+                <li><a href="#" class="hover-blue">Некачественный ремонт по ОСАГОе</a></li>
+                <li><a href="#" class="hover-blue">Страховая просрочила сроки ремонта</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-2 mb-lg-3 acordItem">
+            <h3 class="accordHead--sm mb-0 mb-lg-2 pb-0 pb-lg-1">Споры с Банком:</h3>
+            <div class="accordBody--sm fz-12">
+              <ul>
+                <li><a href="#" class="hover-blue">Вернуть деньги за пониженную ставку по кредиту</a></li>
+                <li><a href="#" class="hover-blue">Вернуть деньги</a></li>
+                <li><a href="#" class="hover-blue">Банкротство физических лиц - списание долгов</a></li>
+                <li><a href="#" class="hover-blue">Оспорить взятый мошенниками кредит</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-2 mb-lg-3 acordItem">
+            <h3 class="accordHead--sm mb-0 mb-lg-2 pb-0 pb-lg-1">АвтоЮрист</h3>
+            <div class="accordBody--sm fz-12">
+              <ul>
+                <li><a href="#" class="hover-blue">Попали в ДТП - поможем увеличить выплату</a></li>
+                <li><a href="#" class="hover-blue">ОСАГО - не отремонтировали - взыщем больше</a></li>
+                <li><a href="#" class="hover-blue">Оценка и экспертиза ущерба авто по ОСАГО</a></li>
+                <li><a href="#" class="hover-blue">Некачественный ремонт на автосервисе - что делать</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="mb-2 mb-lg-3 acordItem">
+            <h3 class="accordHead--sm mb-0 mb-lg-2 pb-0 pb-lg-1">Возврат денег с Автосалона</h3>
+            <div class="accordBody--sm fz-12">
+              <ul>
+                <li><a href="#" class="hover-blue">Возврат денег за навязанные автосалоном услуги</a></li>
+                <li><a href="#" class="hover-blue">Вернуть Авто Дилеру</a></li>
+                <li><a href="#" class="hover-blue">Юрист - выезд в автосалон на покупку авто</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mb-2 mb-lg-3 acordItem">
+            <h3 class="accordHead--sm mb-0 mb-lg-2 pb-0 pb-lg-1">Споры по Недвижимости</h3>
+            <div class="accordBody--sm fz-12">
+              <ul>
+                <li><a href="#" class="hover-blue">Квартира с недостатками - взыщем с застройщика</a></li>
+                <li><a href="#" class="hover-blue">Выделение земельного участка у Государства за 3%-15% от кадастровой стоимости</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col flex-column flex-lg-row d-flex d-xl-block">
+          <div class="mb-0 acordItem col-xl-50">
+            <h3 class="accordHead--sm mb-0 mb-lg-2 pb-0 pb-lg-1">Контакты для записи:</h3>
+            <div class="accordBody--sm fz-12 mb-2 mb-lg-0">
+              <a href="tel:+79290538015" class="footerPhone d-block fw-medium mb-2 hover-blue">+7 (929) 053-80-15</a>
+              <div class="mb-2">
+                <div class="fw-semibold">Москва: </div>
+                <span>МО, Новоивановское, Луговая 1</span>
+              </div>
+              <div class="mb-0 mb-lg-5">
+                <div class="fw-semibold">Нижний Новгород: </div>
+                <span>ул. Родионова 165/13</span>
+              </div>          
+            </div>
+          </div>
+          <div class="fz-12 mt-4 mt-lg-0 col-xl-50">
+            <div class="mb-2">Подпишитесь на советы по защите прав в любой жизненной ситуации</div>
+            <div class="mb-0">
+              <div class="footerSubscribe">
+                <div class="mb-2">
+                  <input type="text" class="formInput" placeholder="name@gmail.com">
+                </div>
+                <button class="button button--blue mb-2">
+                  Жду новые советы
+                </button>
+                <div class="agreement text--gray-500">
+                  нажимая, соглашаюсь с <a href="#" class="text-link hover-blue">политикой конфиденциальности</a>
+                </div>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+      </div>
+    </div>
+
+    <div class="footerB border-t-gray-500">
+
+      <div class="row">
+        <div class="col-lg-4 order-1 mb-3 mb-lg-0">
+          <div class="d-flex flex-column gap-2 fz-12">
+            <span>© Спор Эксперт 2008 - 2025</span>
+            <a class="fw-medium text-link hover-blue" href="#">Политика конфиденциальности</a>
+            <a class="fw-medium text-link hover-blue" href="#">Карта сайта</a>
+          </div>
+        </div>
+        <div class="col-lg-4 order-3 order-lg-2">
+          <div class="d-flex flex-row flex-lg-column w-fit align-items-center footerLogoW">
+            <a href="#" class="footerLogo logo mb-0 mb-lg-2 pb-0 pb-lg-2 border-b-gray-200">
+              Спор Эксперт
+            </a>
+            <div class="d-flex align-items-center gap-2 socials">
+              <a href="#" target="_blank">
+                <img src="img/admin/whatsapp.svg" alt="whatsapp">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/admin/tg.svg" alt="telegram">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/admin/max.svg" alt="max">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/admin/vk.svg" alt="max">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 order-2 order-lg-3 mb-3 mb-lg-0">
+          <div class="d-flex flex-column gap-2 fz-12 w-fit ml-auto footerBRight">
+            <span>ИП Абакумов Вадим Викторович</span>
+            <span>ИНН 526097813004 </span>
+            <span>ОГРН 318527500057891</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+		<!-- modal -->
+<!-- quiz -->
+<div class="modal modalQuiz" id="modalQuiz">
+  <div class="modalQuizWrap">
+
+    <div class="modalQuizBlock modalQuizBlock-1" style="display: block;">
+      <div class="modalQuizContent">
+        <h4 class="h4 text--blue mb-4">Когда вы купили автомобиль?</h4>
+        <div class="modalQuizCheckboxList">
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="when_buy" id="when_buy_1" style="display: none;" checked>
+            <label for="when_buy_1">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">Прошло меньше 30 дней</span>
+            </label>
+          </div>
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="when_buy" id="when_buy_2" style="display: none;">
+            <label for="when_buy_2">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">Прошло больше 30 дней</span>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="modalQuizAction d-flex align-items-center justify-content-between mt-4">
+
+        <span class="fz-14 text--gray-700">Завершено: 0%</span>
+        <div class="d-flex">
+          <!-- <button class="button text--blue fw-medium modalQuizPrevBtn" type="button" >
+              Назад
+            </button> -->
+          <button class="button button--blue modalQuizBtn" id="modalQuizBtn-1">
+            Далее
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modalQuizBlock modalQuizBlock-2">
+      <div class="modalQuizContent">
+        <h4 class="h4 text--blue mb-4">Выберите, что вам навязали из услуг</h4>
+        <div class="modalQuizCheckboxList">
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="what_sells" id="what_sells_1" style="display: none;" checked>
+            <label for="what_sells_1">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">Помощь на дороге</span>
+            </label>
+          </div>
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="what_sells" id="what_sells_2" style="display: none;">
+            <label for="what_sells_2">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">Независимая гарантия</span>
+            </label>
+          </div>
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="what_sells" id="what_sells_3" style="display: none;">
+            <label for="what_sells_3">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">Опционный или лицензионный договор</span>
+            </label>
+          </div>
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="what_sells" id="what_sells_4" style="display: none;">
+            <label for="what_sells_4">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">GAP страхование или жизни, другие</span>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="modalQuizAction d-flex align-items-center justify-content-between mt-4">
+
+        <span class="fz-14 text--gray-700">Завершено: 40%</span>
+        <div class="d-flex">
+          <button class="button text--blue fw-medium modalQuizPrevBtn" type="button" id="modalQuizBtnPrev-2">
+            Назад
+          </button>
+          <button class="button button--blue modalQuizBtn" id="modalQuizBtn-2">
+            Далее
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modalQuizBlock modalQuizBlock-3">
+      <div class="modalQuizContent">
+        <h4 class="h4 text--blue mb-4">Вы уже обращались с заявлением о расторжении?</h4>
+        <div class="modalQuizCheckboxList">
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="zayav_rastorg" id="zayav_rastorg_1" style="display: none;" checked>
+            <label for="zayav_rastorg_1">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">Нет</span>
+            </label>
+          </div>
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="zayav_rastorg" id="zayav_rastorg_2" style="display: none;">
+            <label for="zayav_rastorg_2">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">Да, заявление о расторжении подали в течение 30 дней</span>
+            </label>
+          </div>
+
+          <div class="modalQuizCheckboxItem mb-3 px-3">
+            <input type="radio" name="zayav_rastorg" id="zayav_rastorg_3" style="display: none;">
+            <label for="zayav_rastorg_3">
+              <div class="rect"></div>
+              <span class="fz-14 text--gray-700">Да, но заявление о расторжении подали после 30 дней</span>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="modalQuizAction d-flex align-items-center justify-content-between mt-4">
+
+        <span class="fz-14 text--gray-700">Завершено: 70%</span>
+        <div class="d-flex">
+          <button class="button text--blue fw-medium modalQuizPrevBtn" type="button" id="modalQuizBtnPrev-3">
+            Назад
+          </button>
+          <button class="button button--blue modalQuizBtn" id="modalQuizBtn-3">
+            Далее
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modalQuizBlock modalQuizBlock-4">
+      <h4 class="h4 text--green mb-3">Вам доступен полный возврат стоимости навязанных услуг!</h4>
+      <div class="fz-18 fz-18-sm-16 content">
+        <p>
+          Напишите или позвоните, мы знаем, как быстрее вернуть деньги. <strong>
+            Каждая ситуация уникальна и только детальный
+            анализ документов точно определит возможность и стратегию возврата денег.
+          </strong>
+        </p>
+        <p>
+          Если обращались только по телефону или онлайн, то рекомендуем направить заявление почтой России.
+        </p>
+      </div>
+      <div class=" justify-content-end justify-content-lg-start d-flex flex-row-reverse flex-lg-row align-items-center">
+        <div class="d-flex align-items-center gap-2 socials border-lg-0 mx-0 pr-12 pl-15 pr-lg-0">
+          <a href="#" target="_blank">
+            <img src="img/admin/whatsapp.svg" alt="whatsapp">
+          </a>
+          <a href="#" target="_blank">
+            <img src="img/admin/tg.svg" alt="telegram">
+          </a>
+          <a href="#" target="_blank">
+            <img src="img/admin/max.svg" alt="max">
+          </a>
+        </div>
+        <span class="fw-medium fz-sm-14 border-right-lg-gray pr-10 pl-12">Напишите нам для подробного изучения
+          документов и бесплатной консультации</span>
+      </div>
+    </div>
+
+    <div class="modalQuizBlock modalQuizBlock-5">
+      <h4 class="h4 text--green mb-3">Вы можете вернуть стоимость навязанных услуг за неиспользуемый период!</h4>
+      <div class="fz-18 fz-18-sm-16 content">
+        <p>
+          Можно и полностью, есть стратегия. Также важно изучить и платежеспособность поставщика услуг. Напишите или
+          позвоните нам, мы уже знаем большинство поставщиков.
+        </p>
+        <p>
+          <strong>Каждая ситуация уникальна и только детальный анализ документов точно определит возможность и стратегию возврата денег.</strong>
+        </p>
+      </div>
+      <div class=" justify-content-end justify-content-lg-start d-flex flex-row-reverse flex-lg-row align-items-center">
+        <div class="d-flex align-items-center gap-2 socials border-lg-0 mx-0 pr-12 pl-15 pr-lg-0">
+          <a href="#" target="_blank">
+            <img src="img/admin/whatsapp.svg" alt="whatsapp">
+          </a>
+          <a href="#" target="_blank">
+            <img src="img/admin/tg.svg" alt="telegram">
+          </a>
+          <a href="#" target="_blank">
+            <img src="img/admin/max.svg" alt="max">
+          </a>
+        </div>
+        <span class="fw-medium fz-sm-14 border-right-lg-gray pr-10 pl-12">Напишите нам для подробного изучения
+          документов и бесплатной консультации</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

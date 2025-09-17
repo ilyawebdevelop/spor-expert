@@ -1,0 +1,23 @@
+.expert {
+  &Img {
+    flex-shrink: 0;
+
+    img {
+      width: 60px;
+      @media(max-width: 991px){
+        width: 75px;
+      }
+    }
+  }
+
+  &Name {
+    width: 100%;
+    span {}
+  }
+  .socials {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

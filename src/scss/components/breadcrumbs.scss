@@ -1,12 +1,21 @@
+.breadcrumbs {
+  padding-bottom: 32px;
+  padding-top: 32px;
+  @media(max-width: 991px){
+    padding-top: 22px;
+  }
+}
 .aioseo-breadcrumbs {
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: normal;
+  color: var(--gray-400);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 12px;
-  -moz-column-gap: 12px;
-  column-gap: 12px;
+  align-items: center;
+  -webkit-column-gap: 4px;
+  -moz-column-gap: 4px;
+  column-gap: 4px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -15,6 +24,7 @@
   -webkit-transition: color 0.2s linear;
   -o-transition: color 0.2s linear;
   transition: color 0.2s linear;
+  color: #6DB8E0;
 }
 
 .aioseo-breadcrumbs a:hover {

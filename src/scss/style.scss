@@ -4,6 +4,9 @@
 // bootstrap v5.3.2
 @import "./bootstrap.min";
 
+// fancybox
+@import './fancybox';
+
 // Базовые подключения
 @import 'vars';
 @import 'mixins';
@@ -16,6 +19,7 @@
 @import "./components/burger";
 @import "./components/modal";
 @import "./components/tabs";
+@import "./components/breadcrumbs";
 @import "./components/header";
 @import "./components/intro";
 @import "./components/case";
@@ -28,6 +32,12 @@
 @import "./components/reviews";
 @import "./components/why";
 @import "./components/help";
+@import "./components/article";
+@import "./components/expert";
+@import "./components/faq";
+@import "./components/expert-consult";
+@import "./components/quiz";
+@import "./components/contacts";
 
 
 @import "./components/footer";

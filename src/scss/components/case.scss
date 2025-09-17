@@ -73,3 +73,12 @@
     }
   }
 }
+.case .caseSliderSm {
+  padding-right: 120px;
+  overflow: hidden;
+}
+@media(max-width: 575px){
+  .case .caseSliderSm {
+    padding-right: 0;
+  }
+}

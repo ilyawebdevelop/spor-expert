@@ -1,0 +1,11 @@
+.contacts {
+  &Img {
+    width: 100%;
+  }
+}
+.contacts-image{
+  @media(max-width: 1199px){
+    border-top: none;
+    border-bottom: none;
+  }
+}

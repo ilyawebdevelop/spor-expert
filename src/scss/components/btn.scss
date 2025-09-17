@@ -74,3 +74,12 @@
     background-color: var(--gray-200);
   }
 }
+.modalQuizBtn {
+  height: 44px;
+}
+.modalQuizPrevBtn{
+  @media(max-width: 991px){
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}

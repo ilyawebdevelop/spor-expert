@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Ответы на частые вопросы"
+})
+
+<body>
+
+	<div class="wrapper">
+		@@include('html/header.html',{})
+		<main class="main">
+			@@include('html/breadcrumbs.html',{})
+			<div class="articleWrap">
+				<div class="container">
+					<div class="articleGrid">
+						<div class="articleInner">
+							@@include('html/faq/content.html',{})						
+							@@include('html/result.html',{})
+							@@include('html/expert-consult.html',{})
+							@@include('html/reviews-mini.html',{})
+						</div>
+						<div class="articleSidebar">
+							@@include('html/sidebar/wins.html',{})
+							@@include('html/sidebar/reviews.html',{})
+							@@include('html/sidebar/trust.html',{})
+						</div>
+					</div>
+
+				</div>
+			</div>
+			@@include('html/map-not-consult.html',{})
+			@@include('html/solution.html',{})
+
+
+		</main>
+		@@include('html/footer.html',{})
+		@@include('html/modal.html',{})
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

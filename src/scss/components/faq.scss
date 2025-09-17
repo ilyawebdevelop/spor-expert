@@ -1,0 +1,27 @@
+.faq {
+  .accordHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+
+    &.active {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    img {
+      width: 32px;
+      transition: transform .2s linear;
+      flex-shrink: 0;
+    }
+  }
+
+  .accordItem {
+    box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.25);
+    padding-bottom: 14px;
+    padding-top: 14px;
+  }
+}
+
