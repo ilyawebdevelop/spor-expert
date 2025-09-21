@@ -65,6 +65,8 @@
     text-align: center;
     border-color: 1px solid transparent;
     transition: border-color .2s linear;
+    position: relative;
+    top: -3px;
 
     @media(max-width: 991px) {
       border-bottom: none;
@@ -77,6 +79,7 @@
       display: flex;
       align-items: center;
       font-size: 16px;
+      top: unset;
     }
 
     &:hover {

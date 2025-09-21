@@ -16406,6 +16406,8 @@ a.text--gray-400:hover {
   text-align: center;
   border-color: 1px solid transparent;
   transition: border-color 0.2s linear;
+  position: relative;
+  top: -3px;
 }
 @media (max-width: 991px) {
   .footerLogo {
@@ -16419,6 +16421,7 @@ a.text--gray-400:hover {
     display: flex;
     align-items: center;
     font-size: 16px;
+    top: unset;
   }
 }
 .footerLogo:hover {
