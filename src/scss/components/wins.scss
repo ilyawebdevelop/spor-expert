@@ -16,10 +16,10 @@
 
 .css-slider-track {
   display: flex;
-  animation: scroll-left 15s linear infinite; /* Анимация: имя, длительность, тип, повтор */
+  // animation: scroll-left 15s linear infinite; /* Анимация: имя, длительность, тип, повтор */
   /* Для прокрутки вправо: animation: scroll-right 15s linear infinite; */
   &.css-slider-track-right {
-    animation: scroll-right 15s linear infinite; 
+    // animation: scroll-right 15s linear infinite; 
   }
 }
 

@@ -88,10 +88,10 @@ document.querySelectorAll('.logoSliderLeft').forEach(n => {
 		slidesPerView: 'auto',
 		spaceBetween: 20,
 		loop: true,
-		autoplay: {
-			delay: 2500,  // Задержка между прокруткой (в миллисекундах)
-			disableOnInteraction: false, // Не останавливать при взаимодействии пользователя
-		},
+		// autoplay: {
+		// 	delay: 2500,  // Задержка между прокруткой (в миллисекундах)
+		// 	disableOnInteraction: false, // Не останавливать при взаимодействии пользователя
+		// },
 	});
 });
 
@@ -101,10 +101,10 @@ document.querySelectorAll('.logoSliderRight').forEach(n => {
 		slidesPerView: 'auto',
 		spaceBetween: 20,
 		loop: true,
-		autoplay: {
-			delay: 2500,  // Задержка между прокруткой (в миллисекундах)
-			disableOnInteraction: false, // Не останавливать при взаимодействии пользователя
-		},
+		// autoplay: {
+		// 	delay: 2500,  // Задержка между прокруткой (в миллисекундах)
+		// 	disableOnInteraction: false, // Не останавливать при взаимодействии пользователя
+		// },
 	});
 });
 

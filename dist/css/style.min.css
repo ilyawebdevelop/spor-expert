@@ -15836,13 +15836,8 @@ a.text--gray-400:hover {
 
 .css-slider-track {
   display: flex;
-  animation: scroll-left 15s linear infinite; /* Анимация: имя, длительность, тип, повтор */
   /* Для прокрутки вправо: animation: scroll-right 15s linear infinite; */
 }
-.css-slider-track.css-slider-track-right {
-  animation: scroll-right 15s linear infinite;
-}
-
 .css-slider-slide {
   flex-shrink: 0; /* Важно, чтобы слайды не сжимались */
   width: auto; /* Примерно 5 слайдов видно */
@@ -16198,6 +16193,7 @@ a.text--gray-400:hover {
     grid-column: 12 span;
     padding-left: 0;
     margin-top: 30px;
+    display: none;
   }
 }
 
@@ -16232,11 +16228,17 @@ a.text--gray-400:hover {
 .nav-article-list .nav-article-item:nth-child(1), .nav-article-list .nav-article-item:nth-child(2), .nav-article-list .nav-article-item:nth-child(3) {
   display: flex;
 }
+.nav-article-list .nav-article-item:nth-child(2) {
+  opacity: 0.6;
+}
 .nav-article-list .nav-article-item:nth-child(3) {
   opacity: 0.4;
 }
 .nav-article-list.active .nav-article-item {
   display: flex;
+}
+.nav-article-list.active .nav-article-item:nth-child(2) {
+  opacity: 1;
 }
 .nav-article-list.active .nav-article-item:nth-child(3) {
   opacity: 1;
