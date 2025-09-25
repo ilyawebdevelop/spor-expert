@@ -651,7 +651,11 @@ a.text--gray-400 {
   @media(max-width: 991px){
     border-right: 1px solid var(--gray-300);
   }
- 
+}
+.border-t-sm-none {
+  @media(max-width: 575px){
+    border-top: none;
+  }
 }
 .pr-lg-0 {
   @media(max-width: 991px){

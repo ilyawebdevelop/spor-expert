@@ -14896,6 +14896,12 @@ a.text--gray-400:hover {
   }
 }
 
+@media (max-width: 575px) {
+  .border-t-sm-none {
+    border-top: none;
+  }
+}
+
 @media (max-width: 991px) {
   .pr-lg-0 {
     padding-right: 0 !important;
