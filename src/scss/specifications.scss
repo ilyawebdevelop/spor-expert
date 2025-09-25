@@ -886,3 +886,9 @@ a.text--gray-400 {
     }
   }
 }
+.socials--sm-pr-mr-0 {
+  @media(max-width: 575px){
+    padding-right: 0;
+    margin-right: 0;
+  }
+}

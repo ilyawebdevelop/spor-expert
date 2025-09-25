@@ -15116,6 +15116,13 @@ a.text--gray-400:hover {
   }
 }
 
+@media (max-width: 575px) {
+  .socials--sm-pr-mr-0 {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
 .button {
   display: flex;
   align-items: center;
