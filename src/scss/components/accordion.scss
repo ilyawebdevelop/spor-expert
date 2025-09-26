@@ -1,50 +1,59 @@
 .accordHead {
   cursor: pointer;
   transition: color .2s linear;
+
   &:hover {
     color: var(--blue);
   }
+
   &--sm {
     display: flex;
     justify-content: space-between;
     column-gap: 10px;
     align-items: center;
+
     &.active {
       &::after {
-        @media(max-width: 991px){
+        @media(max-width: 991px) {
           transform: rotate(180deg);
         }
       }
     }
+
     &::after {
-      @media(max-width: 991px){
+      @media(max-width: 991px) {
         content: '';
         display: block;
         background: url('@img/icons/arrow-down.svg') no-repeat center center / contain;
-        width: 12px;
-        height: 5px;
+        width: 21px;
+        height: 8px;
         transition: transform .2s linear;
+        margin-right: 15px;
       }
-     
+
     }
   }
+
   &--arrow-left {
     display: flex;
     column-gap: 16px;
-   
+
     &.active {
       &::before {
         transform: rotate(90deg);
       }
     }
+
     &::before {
       display: block;
       content: '';
-      width: 6px;
-      height: 28px;
+      width: 11px;
+      height: 42px;
       background: url('@img/icons/arrow-right.svg') no-repeat center center / contain;
       transition: transform .2s linear;
       flex-shrink: 0;
+      position: relative;
+      top: -8px;
     }
   }
 }

@@ -15818,6 +15818,7 @@ a.text--gray-400:hover {
 
 .team {
   background-color: #F8F8F8;
+  padding-top: 70px;
 }
 @media (max-width: 991px) {
   .team {
@@ -15926,9 +15927,10 @@ a.text--gray-400:hover {
     content: "";
     display: block;
     background: url("../img/icons/arrow-down.svg") no-repeat center center/contain;
-    width: 12px;
-    height: 5px;
+    width: 21px;
+    height: 8px;
     transition: transform 0.2s linear;
+    margin-right: 15px;
   }
 }
 .accordHead--arrow-left {
@@ -15941,11 +15943,13 @@ a.text--gray-400:hover {
 .accordHead--arrow-left::before {
   display: block;
   content: "";
-  width: 6px;
-  height: 28px;
+  width: 11px;
+  height: 42px;
   background: url("../img/icons/arrow-right.svg") no-repeat center center/contain;
   transition: transform 0.2s linear;
   flex-shrink: 0;
+  position: relative;
+  top: -8px;
 }
 
 .accordBody {
@@ -16560,4 +16564,9 @@ a.text--gray-400:hover {
 .footerLogoW {
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 991px) {
+  .socials-footer-bottom a:nth-child(4) img {
+    width: 29px;
+  }
 }

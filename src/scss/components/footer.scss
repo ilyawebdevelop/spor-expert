@@ -213,3 +213,12 @@
     // margin-right: unset;
   }
 }
+.socials-footer-bottom {
+  a:nth-child(4){
+    img {
+      @media(max-width: 991px){
+       width: 29px; 
+      }
+    }
+  }
+}
