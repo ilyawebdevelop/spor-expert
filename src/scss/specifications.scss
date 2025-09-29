@@ -238,6 +238,10 @@ h3,
 h4,.h4 {
   font-size: 20px;
   line-height: 30px;
+  @media(max-width: 991px){
+    font-size: 18px;
+    line-height: 130%;
+  }
   &.fz-20-sm-16 {
     @media(max-width: 991px){
       font-size: 18px;

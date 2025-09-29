@@ -271,6 +271,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+let startQuizBtn = document.getElementById('startQuizBtn');
+
+let inputQuizArray = document.querySelectorAll('.modalQuizCheckboxItem input');
+
+
 // quiz change blocks
 let quizBlock1 = document.querySelector('.modalQuizBlock-1');
 let quizBlock2 = document.querySelector('.modalQuizBlock-2');
@@ -318,6 +323,13 @@ function showQuizBlock5() {
 	quizBlock5.style.display = 'block';
 }
 
+
+
+startQuizBtn?.addEventListener('click', () => {
+	showQuizBlock1();
+});
+
+
 quizNext1?.addEventListener('click', () => {
 	showQuizBlock2();
 });
@@ -332,16 +344,28 @@ quizPrev3?.addEventListener('click', () => {
 });
 quizNext3?.addEventListener('click', () => {
 
-	if(zayav_rastorg_1.checked){
+	if (zayav_rastorg_1.checked) {
 		showQuizBlock4();
 	}
-	if(zayav_rastorg_3.checked){
+	if (zayav_rastorg_3.checked) {
 		showQuizBlock4();
 	}
-	if(zayav_rastorg_2.checked){
+	if (zayav_rastorg_2.checked) {
 		showQuizBlock5();
 	}
 });
 quizPrev4?.addEventListener('click', () => {
 	showQuizBlock3();
+});
+
+inputQuizArray.forEach(el => {
+	el.addEventListener('click', () => {
+		let arrayBlockInputs = el.closest('.modalQuizBlock').querySelectorAll('.modalQuizCheckboxItem input');
+		let buttonBlock = el.closest('.modalQuizBlock').querySelector('.modalQuizBtn');
+		arrayBlockInputs.forEach(inputOfCurrentBlock => {
+			if(inputOfCurrentBlock.checked){				
+				buttonBlock.classList.add('active');
+			}
+		});	
+	});
 });
