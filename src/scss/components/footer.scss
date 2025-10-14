@@ -9,7 +9,7 @@
 
     @media(max-width: 991px) {
       padding-bottom: 20px;
-
+      border-top: 1px solid #98A1A3;
     }
 
     .accordBody {
@@ -126,12 +126,14 @@
         @media(max-width: 991px) {
           grid-column: 12 span;
         }
-        &:nth-child(5){
-          @media(max-width: 1199px){
+
+        &:nth-child(5) {
+          @media(max-width: 1199px) {
             grid-column: 8 span;
             column-gap: 24px;
           }
-          @media(max-width: 991px){
+
+          @media(max-width: 991px) {
             grid-column: 12 span;
           }
         }
@@ -150,11 +152,13 @@
       }
     }
   }
+
   .col-xl-50 {
-    @media(max-width: 1199px){
+    @media(max-width: 1199px) {
       width: 50%;
     }
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       width: 100%;
     }
   }
@@ -213,11 +217,12 @@
     // margin-right: unset;
   }
 }
+
 .socials-footer-bottom {
-  a:nth-child(4){
+  a:nth-child(4) {
     img {
-      @media(max-width: 991px){
-       width: 29px; 
+      @media(max-width: 991px) {
+        width: 29px;
       }
     }
   }

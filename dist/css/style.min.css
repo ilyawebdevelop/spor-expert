@@ -14802,6 +14802,13 @@ a.text--gray-400:hover {
   margin-top: 32px;
 }
 
+@media (max-width: 991px) {
+  .fz-18-sm-16 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
 .rate-person {
   width: 40px;
   height: 40px;
@@ -15129,6 +15136,30 @@ a.text--gray-400:hover {
   }
 }
 
+.error-page + .footer .footerT {
+  border-top: none;
+}
+
+.contacts-page + .footer .footerT {
+  border-top: none;
+}
+
+.main-page + .footer .footerT {
+  border-top: none;
+}
+
+.reviews-image-page + .footer .footerT {
+  border-top: none;
+}
+
+.reviews-page + .footer .footerT {
+  border-top: none;
+}
+
+.services-page + .footer .footerT {
+  border-top: none;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -15317,6 +15348,12 @@ a.text--gray-400:hover {
 
 .modalQuizBlock {
   display: none;
+}
+@media (max-width: 767px) {
+  .modalQuizBlock .time-icon {
+    position: relative;
+    top: 5px;
+  }
 }
 
 .tabs__nav {
@@ -16411,6 +16448,7 @@ a.text--gray-400:hover {
 @media (max-width: 991px) {
   .footerT {
     padding-bottom: 20px;
+    border-top: 1px solid #98A1A3;
   }
 }
 .footerT .accordBody {

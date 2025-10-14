@@ -555,7 +555,12 @@ a.text--gray-400 {
     margin-top: 32px;
   }
 }
-
+.fz-18-sm-16 {
+  @media(max-width: 991px){
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
 .rate-person {
   width: 40px;
   height: 40px;
@@ -894,5 +899,35 @@ a.text--gray-400 {
   @media(max-width: 575px){
     padding-right: 0;
     margin-right: 0;
+  }
+}
+.error-page {
+  &+.footer .footerT {
+    border-top: none;
+  }
+}
+.contacts-page {
+  &+.footer .footerT {
+    border-top: none;
+  }
+}
+.main-page {
+  &+.footer .footerT {
+    border-top: none;
+  }
+}
+.reviews-image-page {
+  &+.footer .footerT {
+    border-top: none;
+  }
+}
+.reviews-page {
+  &+.footer .footerT {
+    border-top: none;
+  }
+}
+.services-page {
+  &+.footer .footerT {
+    border-top: none;
   }
 }

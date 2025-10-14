@@ -63,4 +63,10 @@
 
 .modalQuizBlock {
   display: none;
+  .time-icon {
+    @media(max-width: 767px){
+      position: relative;
+      top: 5px;
+    }
+  }
 }
