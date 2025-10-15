@@ -69,3 +69,13 @@
   }
 
 }
+.nav-article  {
+  &-item {
+    position: relative;
+    padding-left: 36px;
+    &::before {
+      position: absolute;
+      left: 0;
+    }
+  }
+}

@@ -36,6 +36,8 @@
   &-item {
     display: flex;
     color: var(--gray-800);
+    position: relative;
+    padding-left: 36px;
 
     &:hover {
       color: var(--blue);
@@ -43,6 +45,7 @@
 
     &:not(:last-child) {
       margin-bottom: 14px;
+
     }
   }
 }

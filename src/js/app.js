@@ -67,9 +67,6 @@ var mySwiperReviewsPageSlider = new Swiper(reviewsPageSlider, {
 	slidesPerView: 1,
 	speed: 800,
 	spaceBetween: 30,
-	autoplay: {
-		delay: 5000,
-	},
 	autoHeight: true,
 	navigation: {
 		prevEl: reviewsPageSlider?.querySelector('.navArrowPrev'),

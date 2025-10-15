@@ -16005,6 +16005,15 @@ a.text--gray-400:hover {
   }
 }
 
+.nav-article-item {
+  position: relative;
+  padding-left: 36px;
+}
+.nav-article-item::before {
+  position: absolute;
+  left: 0;
+}
+
 .resultCard {
   display: flex;
   flex-direction: column;
@@ -16264,6 +16273,8 @@ a.text--gray-400:hover {
 .nav-article-item {
   display: flex;
   color: var(--gray-800);
+  position: relative;
+  padding-left: 36px;
 }
 .nav-article-item:hover {
   color: var(--blue);
