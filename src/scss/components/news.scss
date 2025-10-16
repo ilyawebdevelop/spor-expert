@@ -3,4 +3,31 @@
   @media(max-width: 991px){
     padding-bottom: 0;
   }
+  &Card {
+    @media(max-width: 575px){
+      min-height: 200px;
+    }
+    &Title {
+      @media(max-width: 575px) {
+        // height: 74px;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box!important;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+        /* Вертикальная ориентация */
+      }
+    }
+    .content {
+      @media(max-width: 575px) {
+        // height: 74px;
+        overflow: hidden;
+        -webkit-line-clamp: 5;
+        display: -webkit-box!important;
+        /* Включаем флексбоксы */
+        -webkit-box-orient: vertical;
+        /* Вертикальная ориентация */
+      }
+    }
+  }
 }

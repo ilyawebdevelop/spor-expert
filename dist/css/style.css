@@ -16056,6 +16056,31 @@ a.text--gray-400:hover {
     padding-bottom: 0;
   }
 }
+@media (max-width: 575px) {
+  .newsCard {
+    min-height: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .newsCardTitle {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
+@media (max-width: 575px) {
+  .newsCard .content {
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
 
 .reviews .h2 {
   max-width: 600px;
@@ -16384,6 +16409,51 @@ a.text--gray-400:hover {
     border-bottom: 1px solid var(--blue);
   }
 }
+@media (max-width: 575px) {
+  .articlesItem {
+    min-height: 240px;
+  }
+}
+@media (max-width: 575px) {
+  .articlesItem .content {
+    overflow: hidden;
+    -webkit-line-clamp: 8;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
+@media (max-width: 991px) {
+  .articlesItem .content > p {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 991px) {
+  .articlesItem .content ul li {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 575px) {
+  .articlesItemTitle {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
+@media (max-width: 575px) {
+  .articlesItemDescr {
+    overflow: hidden;
+    -webkit-line-clamp: 7;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
 
 @media (max-width: 575px) {
   .articleCard {
@@ -16404,6 +16474,42 @@ a.text--gray-400:hover {
   .articleCardDescr {
     overflow: hidden;
     -webkit-line-clamp: 4;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
+@media (max-width: 575px) {
+  .articleCard .content {
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
+
+@media (max-width: 575px) {
+  .historyCard {
+    min-height: 200px;
+  }
+}
+@media (max-width: 575px) {
+  .historyCardTitle {
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
+@media (max-width: 575px) {
+  .historyCard .content {
+    overflow: hidden;
+    -webkit-line-clamp: 5;
     display: -webkit-box !important;
     /* Включаем флексбоксы */
     -webkit-box-orient: vertical;
