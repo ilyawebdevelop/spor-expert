@@ -14399,6 +14399,12 @@ section {
   }
 }
 
+@media (max-width: 575px) {
+  .articleWrap .container .container {
+    padding: 0;
+  }
+}
+
 .container {
   padding: 0 15px;
 }
@@ -14471,6 +14477,12 @@ h2,
   h2,
 .h2 {
     font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  h2.h2--sm-30,
+.h2.h2--sm-30 {
+    font-size: 30px;
   }
 }
 
@@ -16019,6 +16031,22 @@ a.text--gray-400:hover {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 575px) {
+  .resultCard {
+    justify-content: flex-start;
+    min-height: 130px !important;
+  }
+}
+@media (max-width: 575px) {
+  .resultCardTitle {
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
 
 .news {
   padding-bottom: 60px;
@@ -16354,6 +16382,32 @@ a.text--gray-400:hover {
 @media (max-width: 1199px) {
   .articlesItem {
     border-bottom: 1px solid var(--blue);
+  }
+}
+
+@media (max-width: 575px) {
+  .articleCard {
+    min-height: 185px;
+  }
+}
+@media (max-width: 575px) {
+  .articleCardTitle {
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
+@media (max-width: 575px) {
+  .articleCardDescr {
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
   }
 }
 

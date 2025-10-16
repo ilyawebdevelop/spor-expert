@@ -151,3 +151,30 @@
     border-bottom: 1px solid var(--blue);
   }
 }
+.articleCard {
+  @media(max-width: 575px){
+    min-height: 185px;
+  }
+  &Title {
+    @media(max-width: 575px) {
+      // height: 74px;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      display: -webkit-box!important;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+    }
+  }
+  &Descr {
+    @media(max-width: 575px) {
+      // height: 74px;
+      overflow: hidden;
+      -webkit-line-clamp: 4;
+      display: -webkit-box!important;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+    }
+  }
+}

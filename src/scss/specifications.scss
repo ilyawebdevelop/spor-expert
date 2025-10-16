@@ -135,8 +135,17 @@ section {
   @media (max-width: 575px) {
     padding: 0 12px;
   }
+ 
 }
-
+.articleWrap {
+  .container {
+    .container {
+      @media(max-width: 575px){
+        padding: 0;
+      }
+    }
+  }
+}
 
 .container {
   padding: 0 15px;
@@ -212,6 +221,11 @@ h2,
 
   @media(max-width: 991px) {
     font-size: 24px;
+  }
+  &.h2--sm-30 {
+    @media(max-width: 991px){
+      font-size: 30px;
+    }
   }
 }
 
