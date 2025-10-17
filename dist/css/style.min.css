@@ -16029,23 +16029,20 @@ a.text--gray-400:hover {
 .resultCard {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  min-height: 130px !important;
 }
-@media (max-width: 575px) {
-  .resultCard {
-    justify-content: flex-start;
-    min-height: 130px !important;
-  }
+.resultCardTitle {
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  display: -webkit-box !important;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
 }
-@media (max-width: 575px) {
-  .resultCardTitle {
-    overflow: hidden;
-    -webkit-line-clamp: 3;
-    display: -webkit-box !important;
-    /* Включаем флексбоксы */
-    -webkit-box-orient: vertical;
-    /* Вертикальная ориентация */
-  }
+
+.resultCardSidebar {
+  min-height: 94px;
 }
 
 .news {

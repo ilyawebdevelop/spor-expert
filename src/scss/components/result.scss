@@ -2,23 +2,23 @@
   &Card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
 
-    @media(max-width: 575px) {
-      justify-content: flex-start;
-      min-height: 130px !important;
-    }
+    justify-content: flex-start;
+    min-height: 130px !important;
+
 
     &Title {
-      @media(max-width: 575px) {
-        // height: 74px;
-        overflow: hidden;
-        -webkit-line-clamp: 3;
-        display: -webkit-box!important;
-        /* Включаем флексбоксы */
-        -webkit-box-orient: vertical;
-        /* Вертикальная ориентация */
-      }
+      // height: 74px;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      display: -webkit-box !important;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
     }
   }
+}
+.resultCardSidebar {
+  min-height: 94px;
 }
