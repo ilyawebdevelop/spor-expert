@@ -153,21 +153,15 @@
     border-bottom: 1px solid var(--blue);
   }
 
-  @media(max-width: 575px) {
-    min-height: 200px;
+  @media(max-width: 767px) {
+    min-height: unset;
   }
 
   .content {
     overflow: hidden;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 5;
     display: -webkit-box !important;
-    /* Включаем флексбоксы */
     -webkit-box-orient: vertical;
-    /* Вертикальная ориентация */
-
-    @media(max-width: 575px) {
-      -webkit-line-clamp: 5;
-    }
 
     &>p {
       @media(max-width: 991px) {
@@ -184,69 +178,64 @@
     }
   }
 
-  &Title {
-    overflow: hidden;
-    -webkit-line-clamp: 2;
-    display: -webkit-box !important;
-    /* Включаем флексбоксы */
-    -webkit-box-orient: vertical;
-    /* Вертикальная ориентация */
-
-  }
-
   &Descr {
     overflow: hidden;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 5;
     display: -webkit-box !important;
-    /* Включаем флексбоксы */
     -webkit-box-orient: vertical;
-
-    /* Вертикальная ориентация */
-    @media(max-width: 575px) {
-      -webkit-line-clamp: 5;
-    }
   }
 }
 
 .articleCard {
-  @media(max-width: 575px) {
-    min-height: 185px;
-  }
 
   &Title {
-    @media(max-width: 575px) {
-      // height: 74px;
-      overflow: hidden;
-      -webkit-line-clamp: 2;
-      display: -webkit-box !important;
-      /* Включаем флексбоксы */
-      -webkit-box-orient: vertical;
-      /* Вертикальная ориентация */
-    }
+    // @media(max-width: 575px) {
+    //   // height: 74px;
+    //   overflow: hidden;
+    //   -webkit-line-clamp: 2;
+    //   display: -webkit-box !important;
+    //   /* Включаем флексбоксы */
+    //   -webkit-box-orient: vertical;
+    //   /* Вертикальная ориентация */
+    // }
   }
 
   &Descr {
-    @media(max-width: 575px) {
-      // height: 74px;
-      overflow: hidden;
-      -webkit-line-clamp: 4;
-      display: -webkit-box !important;
-      /* Включаем флексбоксы */
-      -webkit-box-orient: vertical;
-      /* Вертикальная ориентация */
-    }
+    min-height: unset;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+    // @media(max-width: 575px) {
+    //   // height: 74px;
+    //   overflow: hidden;
+    //   -webkit-line-clamp: 4;
+    //   display: -webkit-box !important;
+    //   /* Включаем флексбоксы */
+    //   -webkit-box-orient: vertical;
+    //   /* Вертикальная ориентация */
+    // }
   }
 
   .content {
-    @media(max-width: 575px) {
-      // height: 74px;
-      overflow: hidden;
-      -webkit-line-clamp: 5;
-      display: -webkit-box !important;
-      /* Включаем флексбоксы */
-      -webkit-box-orient: vertical;
-      /* Вертикальная ориентация */
-    }
+    min-height: unset;
+    overflow: hidden;
+    -webkit-line-clamp: 7;
+    display: -webkit-box !important;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+    // @media(max-width: 575px) {
+    //   // height: 74px;
+    //   overflow: hidden;
+    //   -webkit-line-clamp: 5;
+    //   display: -webkit-box !important;
+    //   /* Включаем флексбоксы */
+    //   -webkit-box-orient: vertical;
+    //   /* Вертикальная ориентация */
+    // }
   }
 }
 
