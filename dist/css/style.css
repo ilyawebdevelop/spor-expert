@@ -16403,7 +16403,8 @@ a.text--gray-400:hover {
 }
 
 .articlesItem {
-  min-height: 180px;
+  min-height: 148px;
+  height: 100%;
 }
 @media (max-width: 1199px) {
   .articlesItem {
@@ -16413,6 +16414,7 @@ a.text--gray-400:hover {
 @media (max-width: 767px) {
   .articlesItem {
     min-height: unset;
+    height: unset;
   }
 }
 .articlesItem .content {

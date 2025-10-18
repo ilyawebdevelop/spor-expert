@@ -147,7 +147,8 @@
 }
 
 .articlesItem {
-  min-height: 180px;
+  min-height: 148px;
+  height: 100%;
 
   @media(max-width: 1199px) {
     border-bottom: 1px solid var(--blue);
@@ -155,6 +156,7 @@
 
   @media(max-width: 767px) {
     min-height: unset;
+    height: unset;
   }
 
   .content {
